@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <style>
+        *{
+          overflow: hidden;
+        }
+        body{
+            background-color: bisque;
+        }
+        .profile p{
+            font-size:24px;
+            text-align: LEFT;;
+        }
+        .profile img{
+            border-radius: 50%;
+            height:280px;
+            width:280px;
+        }
+        .profile {
+            background-color: white;;
+            border:4px solid grey;
+            display:flex;
+            flex-direction: column;
+            width:25%;
+            align-items: center;
+            padding: 16px;;
+        }
+        .container{
+            
+            margin-top: 120px;
+            display: flex;
+            flex-direction: row;;
+            justify-content: space-evenly;
+        }
+        .contain{
+            position: fixed;
+            bottom: 0px;;
+            left: 0px;
+            width: 100%;;
+            background-color:grey;
+            text-align: center;
+            color: white;;
+        }
+        .contain p {
+            font-size: 18px;;
+        }
+        .header{
+            position: fixed;
+            width: 100%;;
+            top:0px;
+            left: 0px;;
+            background-color: grey;
+            color:white;
+            margin-bottom:30px;
+        }
+        .header p {
+            font-size: 24px;;
+            text-align: center;   
+        }
+        div:hover div:not(:hover){
+            opacity: 0.8;;
+            transform: scale(0.85);
+            /* background-color:grey; */
+        }
+        body {
+  --s: 25vmin;
+  --p: calc(var(--s) / 2);
+  --c1: pink;
+  --c2: dodgerblue;
+  --c3: white;
+  --bg: var(--c3);
+  --d: 4000ms;
+  --e: cubic-bezier(0.76, 0, 0.24, 1);
+  
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(45deg, var(--c1) 25%, transparent 25%),
+    linear-gradient(-45deg, var(--c1) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, var(--c2) 75%),
+    linear-gradient(-45deg, transparent 75%, var(--c2) 75%);
+  background-size: var(--s) var(--s);
+  background-position: 
+    calc(var(--p) *  1) calc(var(--p) *  0), 
+    calc(var(--p) * -1) calc(var(--p) *  1), 
+    calc(var(--p) *  1) calc(var(--p) * -1), 
+    calc(var(--p) * -1) calc(var(--p) *  0);
+  animation: 
+    color var(--d) var(--e) infinite,
+    position var(--d) var(--e) infinite;
+}
+
+@keyframes color {
+  0%, 25% {
+    --bg: var(--c3);
+  }
+  26%, 50% {
+    --bg: var(--c1);
+  }
+  51%, 75% {
+    --bg: var(--c3);
+  }
+  76%, 100% {
+    --bg: var(--c2);
+  }
+}
+
+@keyframes position {
+  0% {
+    background-position: 
+      calc(var(--p) *  1) calc(var(--p) *  0), 
+      calc(var(--p) * -1) calc(var(--p) *  1), 
+      calc(var(--p) *  1) calc(var(--p) * -1), 
+      calc(var(--p) * -1) calc(var(--p) *  0);
+  }
+  25% {
+    background-position: 
+      calc(var(--p) *  1) calc(var(--p) *  4), 
+      calc(var(--p) * -1) calc(var(--p) *  5), 
+      calc(var(--p) *  1) calc(var(--p) *  3), 
+      calc(var(--p) * -1) calc(var(--p) *  4);
+  }
+  50% {
+    background-position: 
+      calc(var(--p) *  3) calc(var(--p) * 8), 
+      calc(var(--p) * -3) calc(var(--p) * 9), 
+      calc(var(--p) *  2) calc(var(--p) * 7), 
+      calc(var(--p) * -2) calc(var(--p) * 8);
+  }
+  75% {
+    background-position: 
+      calc(var(--p) *  3) calc(var(--p) * 12), 
+      calc(var(--p) * -3) calc(var(--p) * 13), 
+      calc(var(--p) *  2) calc(var(--p) * 11), 
+      calc(var(--p) * -2) calc(var(--p) * 12);
+  }
+  100% {    
+    background-position: 
+      calc(var(--p) *  5) calc(var(--p) * 16), 
+      calc(var(--p) * -5) calc(var(--p) * 17), 
+      calc(var(--p) *  5) calc(var(--p) * 15), 
+      calc(var(--p) * -5) calc(var(--p) * 16);
+  }
+}
+
+@media (prefers-reduced-motion) {
+  body {
+    animation: none;
+  }
+}
+    </style>
+    
+    <body>
+        <div class="header">
+            <p>The Team</p>
+        </div>
+      <div class="container">
+        <div class="profile">
+            <img src = 'pp.jpg'>
+            <p>Name : S.Sai Sri Charan </p>
+            <p>Roll No: 22ECB0A35</p>
+            <p><a href="https://www.linkedin.com/in/sai-sri-charan-siliveri-12a26b256/" target="_blank">Linked In</a></p>
+            <p>Phone Number: +91 6281768745 </p>
+        </div>
+        <div class="profile">
+            <img src = 'rk.jpg'>
+            <p>Name M. Rama Krishna </p>
+            <p>Roll No: 22ECB0A14 </p>
+            <p><a href="https://www.linkedin.com/in/rama-krishna-reddy-00bb3b258/" target="_blank">Linked In</a></p>
+            <p>Phone Number: +91 8125900716</p>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias impedit, repellat vitae exercitationem quae, necessitatibus odio ab provident a maiores, ratione asperiores! Reiciendis nobis non modi amet, \quaerat possimus cum!</p> -->
+        </div>
+        <div class="profile">
+            <img src='darsh.jpg'>
+            <p>Name : G.Sai Darshith Yadav</p>
+            <p>Roll No: 22ECB0A32 </p>
+            <p><a href="#">Linked In</a></p>
+            <p>Phone Number: +91 8074302569</p>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla culpa laboriosam, adipisci debitis velit excepturi animi deleniti provident veritatis? Perspiciatis consequatur necessitatibus quo nulla voluptate modi labore quasi recusandae sint.</p> -->
+        </div>
+    </div>
+    <footer class = "footer bg-dark">
+        <div class="contain">
+            <div class = "footer-content text-center">
+                <p class="fs-15">&copy; Copyright 2024. All Rights Reserved - <span>build.resume</span></p>
+                <p>Made By Rama Krishna,Charan,Darshith</p>
+            </div>
+        </div>
+    </footer>
+    </body>
+</html>

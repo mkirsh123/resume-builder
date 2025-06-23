@@ -1,0 +1,50 @@
+/* CSS */
+.sidebar-button {
+  position: relative;
+}
+
+.hover-button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hover-button:hover {
+  background-color: #3e8e41;
+}
+
+.sidebar-content {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: none;
+}
+
+.sidebar-button:hover .sidebar-content {
+  display: block;
+}
+
+.sidebar-content ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-content li {
+  margin-bottom: 10px;
+}
+
+.sidebar-content a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+.sidebar-content a:hover {
+  color: #23527c;
+}
